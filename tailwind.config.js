@@ -3,7 +3,7 @@
 import DEFAULT_THEME from 'tailwindcss/defaultTheme';
 
 module.exports = {
-  content: ["./src/**/*.{html,css,ts}"],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     colors: {
       "light-cyan": "hsl(193, 38%, 86%)",
