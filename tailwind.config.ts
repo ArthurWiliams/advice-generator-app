@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
 
-import DEFAULT_THEME from 'tailwindcss/defaultTheme';
+import DEFAULT_THEME from "tailwindcss/defaultTheme";
 
-module.exports = {
+export default {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     colors: {
@@ -10,11 +10,10 @@ module.exports = {
       "neon-green": "hsl(150, 100%, 66%)",
       "grayish-blue": "hsl(217, 19%, 38%)",
       "dark-grayish-blue": "hsl(217, 19%, 24%)",
-      "dark-blue": "hsl(218, 23%, 16%)"
+      "dark-blue": "hsl(218, 23%, 16%)",
     },
     fontFamily: {
-      sans: ["Manrope", ...DEFAULT_THEME.fontFamily.sans]
+      sans: ["Manrope", ...DEFAULT_THEME.fontFamily.sans],
     },
   },
-}
-
+} satisfies Config;
