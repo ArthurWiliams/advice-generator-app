@@ -2,10 +2,16 @@
   "name": "advice-generator-app",
   "version": "1.0.0",
   "description": "An advice generator app or practicing purposes.",
-  "browserslist": ["defaults"],
-  "scripts": {
-  },
-  "keywords": ["Advice"],
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {},
+  "keywords": [
+    "Advice"
+  ],
   "author": "Arthur Wiliams",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
 }
