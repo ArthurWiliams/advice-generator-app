@@ -7,6 +7,11 @@
   "browserslist": [
     "defaults"
   ],
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {}
+    }
+  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
