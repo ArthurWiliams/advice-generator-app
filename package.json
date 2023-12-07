@@ -1,6 +1,7 @@
 {
   "name": "advice-generator-app",
   "version": "1.0.0",
+  "private": "true",
   "description": "An advice generator app or practicing purposes.",
   "browserslist": [
     "defaults"
