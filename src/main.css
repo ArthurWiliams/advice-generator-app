@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply transition-all duration-100 p-8;
+  }
+
+  .button--disabled {
+    @apply bg-grayish-green cursor-not-allowed;
+  }
+
+  .button--primary {
+    @apply bg-neon-green hover:shadow-neon focus:shadow-neon;
+  }
+}
