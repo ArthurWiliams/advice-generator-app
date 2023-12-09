@@ -15,5 +15,10 @@ export default {
     fontFamily: {
       sans: ["Manrope", ...DEFAULT_THEME.fontFamily.sans],
     },
+    extend: {
+      boxShadow: {
+        neon: "0 0 35px 1px hsl(150, 100%, 66%)",
+      },
+    },
   },
 } satisfies Config;
