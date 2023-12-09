@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="bg-dark-blue text-light-cyan selection:bg-neon-green selection:text-dark-blue min-h-screen"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,9 +25,44 @@
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main class="">
+      <h1 class="sr-only">Advice Generator</h1>
 
-    "<!-- Advice text goes here -->"
+      <article
+        class="p-6 pb-16 text-center rounded-2xl max-w-[27rem] bg-dark-grayish-blue absolute left-1/2 -translate-x-1/2 bottom-[33vh] shadow-2xl"
+      >
+        <h2
+          class="text-neon-green pt-4 inline-block uppercase tracking-[0.3em] text-[0.69rem]"
+          aria-live="polite"
+        >
+          Advice <span aria-label="number">#</span><span id="advice-id"></span>
+        </h2>
+
+        <blockquote class="my-6 text-2xl" id="advice" aria-live="polite">
+          Loading advice...
+        </blockquote>
+
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../images/pattern-divider-desktop.svg"
+          />
+          <img
+            class="mx-auto"
+            src="../images/pattern-divider-mobile.svg"
+            alt="divider"
+          />
+        </picture>
+
+        <button
+          type="button"
+          class="button button--disabled absolute rounded-full left-1/2 -translate-x-1/2 -bottom-8 bg-[url('../images/icon-dice.svg')] bg-no-repeat bg-center bg-[length:40%]"
+          id="generate-advice"
+          disabled
+          aria-label="generate advice"
+        ></button>
+      </article>
+    </main>
 
     <div class="sr-only">
       Challenge by
