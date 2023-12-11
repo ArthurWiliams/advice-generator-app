@@ -4,7 +4,7 @@
 
 @layer components {
   .button {
-    @apply transition-all duration-100 p-8;
+    @apply transition-all duration-100 p-6;
   }
 
   .button--disabled {
