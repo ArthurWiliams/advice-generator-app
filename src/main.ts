@@ -26,7 +26,7 @@ async function main(): Promise<void> {
   }
 
   GENERATE_ADVICE_BUTTON.addEventListener("click", async function () {
-    if (this.getAttribute("disabled")) {
+    if (this.hasAttribute("disabled")) {
       return;
     }
 
