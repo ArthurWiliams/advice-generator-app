@@ -44,6 +44,7 @@ Users should be able to:
 - Mobile-first workflow
 - [Parcel](https://parceljs.org/) - Build Tool
 - [Tailwindcss](https://tailwindcss.com/) - CSS Framework
+- [Typescript](https://www.typescriptlang.org/) - JS Superset
 
 ### Continued development
 
