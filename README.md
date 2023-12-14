@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://www.frontendmentor.io/solutions/advice-generator-app-using-tailwindcss-and-typescript-24nUGSJ58p)](https://www.frontendmentor.io/solutions/advice-generator-app-using-tailwindcss-and-typescript-24nUGSJ58p)
+- Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-using-tailwindcss-and-typescript-24nUGSJ58p](https://www.frontendmentor.io/solutions/advice-generator-app-using-tailwindcss-and-typescript-24nUGSJ58p)
 - Live Site URL: [https://tubular-parfait-6a20e7.netlify.app/](https://tubular-parfait-6a20e7.netlify.app/)
 
 ## My process
