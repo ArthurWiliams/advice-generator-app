@@ -7,9 +7,12 @@ async function main(): Promise<void> {
   const GENERATE_ADVICE_BUTTON = <HTMLButtonElement>(
     getElementOrThrow("#generate-advice")
   );
+  const DICE_ICON = <HTMLImageElement>GENERATE_ADVICE_BUTTON.children[0];
 
   const ENABLE_BUTTON_CLASS = ["button--primary"];
   const DISABLE_BUTTON_CLASS = ["button--disabled"];
+
+  const ICON_ANIMATION_CLASS = "motion-safe:animate-spin";
 
   try {
     const { advice, id } = await fetchRandomAdvice();
@@ -23,6 +26,7 @@ async function main(): Promise<void> {
       toAdd: ENABLE_BUTTON_CLASS,
       toRemove: DISABLE_BUTTON_CLASS,
     });
+    DICE_ICON.classList.remove(ICON_ANIMATION_CLASS);
   }
 
   GENERATE_ADVICE_BUTTON.addEventListener("click", async function () {
@@ -34,6 +38,7 @@ async function main(): Promise<void> {
       toAdd: DISABLE_BUTTON_CLASS,
       toRemove: ENABLE_BUTTON_CLASS,
     });
+    DICE_ICON.classList.add(ICON_ANIMATION_CLASS);
 
     try {
       const { advice, id } = await fetchRandomAdvice();
@@ -47,6 +52,7 @@ async function main(): Promise<void> {
         toAdd: ENABLE_BUTTON_CLASS,
         toRemove: DISABLE_BUTTON_CLASS,
       });
+      DICE_ICON.classList.remove(ICON_ANIMATION_CLASS);
     }
   });
 }
