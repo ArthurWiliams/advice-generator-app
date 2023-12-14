@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Continued development
 
-I think I've done enough project with Vanilla Typescript. Going forward I'm going to focus on building projects using JS Frameworks like Vue or Solid unless the project doesn't require much if any JS at all.
+I think I've done enough projects with Vanilla Typescript. Going forward I'm going to focus on building projects using JS Frameworks like Vue or Solid unless the project doesn't require much if any JS at all.
 
 ### Useful resources
 
